@@ -3,6 +3,8 @@ This is the second lab, writing and running a basic hadoop program
 
 This is the basic wordcount program as discussed in the lecture.
 
+Vagrant file above ^^^ is a working version up to end of lab 2.
+
 # Python
 
 Install MRJob library
