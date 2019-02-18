@@ -3,7 +3,7 @@ This is the second lab, writing and running a basic hadoop program
 
 This is the basic wordcount program as discussed in the lecture.
 
-Vagrant file above ^^^ is a working version up to end of lab 2.
+Vagrantfile above creates an blank ubuntu trusty 64 vm and installs mrjob (python mapreduce library)
 
 # Python
 
