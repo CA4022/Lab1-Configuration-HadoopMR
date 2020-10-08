@@ -1,7 +1,7 @@
 # FirstLab
-This is the first lab, installing hadoop, writing and running a basic hadoop program
+This is the first lab, installing hadoop, writing and running a basic hadoop program.
 
-This is the basic wordcount program as discussed in the lecture.
+We will start from the basic wordcount program as illustreated in the lecture slides.
 
 <!--Vagrantfile above creates an blank ubuntu trusty 64 vm and installs mrjob (python mapreduce library)-->
 
