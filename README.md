@@ -1,9 +1,17 @@
-# SecondLab
-This is the second lab, writing and running a basic hadoop program
+# FirstLab
+This is the first lab, installing hadoop, writing and running a basic hadoop program
 
 This is the basic wordcount program as discussed in the lecture.
 
-Vagrantfile above creates an blank ubuntu trusty 64 vm and installs mrjob (python mapreduce library)
+<!--Vagrantfile above creates an blank ubuntu trusty 64 vm and installs mrjob (python mapreduce library)-->
+
+
+## Set up a single node Hadoop Cluster
+
+Download Hadoop and run the example single-cluster grep application.
+<https://hadoop.apache.org/docs/current/hadoop-project-dist/hadoop-common/SingleCluster.html>
+
+You might need to install oracle java, or to ensure that the ports are listening correctly.
 
 # Python
 
