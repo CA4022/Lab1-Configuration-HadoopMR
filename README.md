@@ -6,7 +6,7 @@ This is the basic wordcount program as discussed in the lecture.
 <!--Vagrantfile above creates an blank ubuntu trusty 64 vm and installs mrjob (python mapreduce library)-->
 
 
-## Set up a single node Hadoop Cluster
+# Set up a single node Hadoop Cluster
 
 Download Hadoop and run the example single-cluster grep application.
 <https://hadoop.apache.org/docs/current/hadoop-project-dist/hadoop-common/SingleCluster.html>
