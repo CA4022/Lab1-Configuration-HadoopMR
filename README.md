@@ -36,9 +36,24 @@ If hadoop installation via brew does not work, get the latest stable release fro
 `hadoop classpath` will give you the requisite libraries if you are compiling
 from the command line.
 
-Follow the instructions here to make and run the jar
 
+<!--Follow the instructions here to make and run the jar
 <http://hadoop.apache.org/docs/current/hadoop-mapreduce-client/hadoop-mapreduce-client-core/MapReduceTutorial.html>
+Generate a sample input file as in 
+https://docs.deistercloud.com/content/Technology.50/Hadoop/Hadoop%20single.10.xml?embedded=true#c5ceb5c977c8c4cf1d80d5601f43f406
+`$ bin/hadoop jar share/hadoop/mapreduce/hadoop-mapreduce-examples-3.2.1.jar grep words.txt output 'mark'`-->
+
+<!-- my hadoop is at /usr/local/Cellar/hadoop-3.2.1/ -->
+
+`$ bin/hadoop jar share/hadoop/mapreduce/hadoop-mapreduce-examples-3.2.1.jar grep input output 'dfs[a-z.]+'`
+
+## If Datanode does not start
+
+Clean tmp directory
+
+`$ rm -Rf /tmp/hadoop-yourusername/*`
+
+Format namenode and then start dfs again.
 
 
 # Python
