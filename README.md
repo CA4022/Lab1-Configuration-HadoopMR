@@ -31,15 +31,6 @@ If hadoop installation via brew does not work, get the latest stable release fro
 
 <!-- have not added the JAVA_HOME setup on hadoop-env.sh as it gave error-->
 
-# Python
-
-Install MRJob library
-Run the mrjob.py program
-
-<https://pythonhosted.org/mrjob/guides/quickstart.html>
-
-Alter the example program to produce a wordcount
-
 # Java
 
 `hadoop classpath` will give you the requisite libraries if you are compiling
@@ -48,6 +39,17 @@ from the command line.
 Follow the instructions here to make and run the jar
 
 <http://hadoop.apache.org/docs/current/hadoop-mapreduce-client/hadoop-mapreduce-client-core/MapReduceTutorial.html>
+
+
+# Python
+
+Install MRJob library
+
+https://pypi.org/project/mrjob/#description
+
+<!-- Run the mrjob.py program
+<https://pythonhosted.org/mrjob/guides/quickstart.html>
+Alter the example program to produce a wordcount -->
 
 ## Bonus items: come back to this after the Lecture on Amazon EC2 and Elastic MapReduce (EMR)
 
