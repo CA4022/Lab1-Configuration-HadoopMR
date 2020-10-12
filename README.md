@@ -9,7 +9,6 @@ Vagrantfile above creates an blank ubuntu trusty 64 virtual machine and installs
 In order to avoid overload we are not going to create a VM to run Hadoop, but we will run a single node cluster on our own machine (Mac or Windows) or on the Unix Lab machine accessible remotely.
 
 
-
 # Set up a single node Hadoop Cluster
 
 The official Apache manual for installing a single node Hadoop Cluster is here:
@@ -25,10 +24,10 @@ $ java -version
 If you do not have Java8, install it
 $ brew cask install homebrew/cask-versions/adoptopenjdk8-->
 
-##Note: if hadoop installation via brew does not work, get the latest stable release from:
+## Note on hadoop install 
+If hadoop installation via brew does not work, get the latest stable release from:
 
 <https://mirrors.whoishostingthis.com/apache/hadoop/common/>
-
 
 
 # Python
