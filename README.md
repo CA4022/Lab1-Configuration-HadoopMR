@@ -29,6 +29,7 @@ If hadoop installation via brew does not work, get the latest stable release fro
 
 <https://mirrors.whoishostingthis.com/apache/hadoop/common/>
 
+<!-- have not added the JAVA_HOME setup on hadoop-env.sh as it gave error-->
 
 # Python
 
