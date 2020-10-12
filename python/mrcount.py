@@ -1,16 +1,23 @@
+"""The classic MapReduce job: count the frequency of words.
+"""
 from mrjob.job import MRJob
+import re
+
+WORD_RE = re.compile(r"[\w']+")
 
 
-class MRWordFrequencyCount(MRJob):
+class MRWordFreqCount(MRJob):
 
     def mapper(self, _, line):
-        yield "chars", len(line)
-        yield "words", len(line.split())
-        yield "lines", 1
+        for word in WORD_RE.findall(line):
+            yield (word.lower(), 1)
 
-    def reducer(self, key, values):
-        yield key, sum(values)
+    def combiner(self, word, counts):
+        yield (word, sum(counts))
+
+    def reducer(self, word, counts):
+        yield (word, sum(counts))
 
 
 if __name__ == '__main__':
-    MRWordFrequencyCount.run()
+     MRWordFreqCount.run()
