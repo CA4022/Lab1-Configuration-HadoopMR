@@ -3,15 +3,24 @@ This is the first lab, installing hadoop, writing and running a basic hadoop pro
 
 We will start from the basic wordcount program as illustreated in the lecture slides.
 
-<!--Vagrantfile above creates an blank ubuntu trusty 64 vm and installs mrjob (python mapreduce library)-->
+## Note on Vagrant
+ 
+Vagrantfile above creates an blank ubuntu trusty 64 virtual machine and installs mrjob (python mapreduce library).
+In order to avoid overload we are not going to create a VM to run Hadoop, but we will run a single node cluster on our own machine (Mac or Windows) or on the Unix Lab machine accessible remotely.
 
+
+# Check installed software
+Make sure you have Java 8 installed, and (for MAC users) Homebrew is updated and working.
 
 # Set up a single node Hadoop Cluster
 
-Download Hadoop and run the example single-cluster grep application.
+The official Apache manual for installing a single node Hadoop Cluster is here:
 <https://hadoop.apache.org/docs/current/hadoop-project-dist/hadoop-common/SingleCluster.html>
 
-You might need to install oracle java, or to ensure that the ports are listening correctly.
+For MAC users, I found this step-by-step recent guide works with very minor issues:
+<https://towardsdatascience.com/installing-hadoop-on-a-mac-ec01c67b003c>
+
+
 
 # Python
 
