@@ -31,14 +31,33 @@ If hadoop installation via brew does not work, get the latest stable release fro
 
 <!-- have not added the JAVA_HOME setup on hadoop-env.sh as it gave error-->
 
-# Java
+# Java: running an example jar
 
-`hadoop classpath` will give you the requisite libraries if you are compiling
-from the command line.
+Follow the instructions here for execution of a jar:
 
-Follow the instructions here to make and run the jar
+<https://hadoop.apache.org/docs/current/hadoop-project-dist/hadoop-common/SingleCluster.html#Standalone_Operation>
 
-<http://hadoop.apache.org/docs/current/hadoop-mapreduce-client/hadoop-mapreduce-client-core/MapReduceTutorial.html>
+Note: You can also execute some precompiled jar files, try:
+
+`$ bin/hdfs dfs -mkdir input
+
+ $ bin/hdfs dfs -put etc/hadoop/*.xml input
+
+$ bin/hadoop jar share/hadoop/mapreduce/hadoop-mapreduce-examples-3.2.1.jar grep input output 'dfs[a-z.]+'`
+
+or 
+
+`$ bin/hadoop jar share/hadoop/mapreduce/hadoop-mapreduce-examples-3.2.1.jar wordcount input output`
+
+* visualise the output
+
+`$ bin/hdfs dfs -cat output/part-r-00000`
+
+## NOTE on output folder
+
+If you run a different jar, remember to use a different output folder or to remove the existing output
+
+`$ bin/hdfs dfs -rm -R output `
 
 <!--Generate a sample input file as in 
 https://docs.deistercloud.com/content/Technology.50/Hadoop/Hadoop%20single.10.xml?embedded=true#c5ceb5c977c8c4cf1d80d5601f43f406
@@ -47,6 +66,14 @@ https://docs.deistercloud.com/content/Technology.50/Hadoop/Hadoop%20single.10.xm
 
 <!-- my hadoop is at /usr/local/Cellar/hadoop-3.2.1/ -->
 
+# Java: compile your own java program
+
+`hadoop classpath` will give you the requisite libraries if you are compiling
+from the command line.
+
+Follow the instructions here to make and run the jar
+
+<http://hadoop.apache.org/docs/current/hadoop-mapreduce-client/hadoop-mapreduce-client-core/MapReduceTutorial.html>
 
 If you want to compile and run your own java program (note the cluster must be running):
 
@@ -65,23 +92,8 @@ If you want to compile and run your own java program (note the cluster must be r
 * execute it on HDFS: 
 `$ bin/hadoop jar wc.jar WordCount input output`
 
-Note: You can also execute some precompiled jar files, try:
 
-`$ bin/hdfs dfs -mkdir input
-
- $ bin/hdfs dfs -put etc/hadoop/*.xml input
-
-$ bin/hadoop jar share/hadoop/mapreduce/hadoop-mapreduce-examples-3.2.1.jar grep input output 'dfs[a-z.]+'`
-
-or 
-
-`$ bin/hadoop jar share/hadoop/mapreduce/hadoop-mapreduce-examples-3.2.1.jar wordcount input output`
-
-* visualise the output
-
-`$ bin/hdfs dfs -cat output/part-r-00000`
-
-## If Datanode does not start
+# If Datanode does not start
 
 * clean tmp directory: 
 `$ rm -Rf /tmp/hadoop-yourusername/*`
@@ -104,7 +116,7 @@ Run the mrjob.py program
 <https://pythonhosted.org/mrjob/guides/quickstart.html>
 Alter the example program to produce a wordcount -->
 
-## Bonus: run on EMR
+# Bonus: run on EMR
 We will come back to this after the Lecture on Amazon EC2 and Elastic MapReduce (EMR)
 
 To run this on Elastic Mapreduce you'll need API keys from your AWS Console.
