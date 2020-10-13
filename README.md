@@ -50,6 +50,9 @@ https://docs.deistercloud.com/content/Technology.50/Hadoop/Hadoop%20single.10.xm
 
 If you want to compile and run your own java program (note the cluster must be running):
 
+* make sure you set your JAVA_HOME to the right path (you find it by running 
+`$ /usr/libexec/java_home`)
+
 * make sure you set your HADOOP_CLASSPATH: 
 
 `$export HADOOP_CLASSPATH=$JAVA_HOME/lib/tools.jar`
@@ -62,9 +65,21 @@ If you want to compile and run your own java program (note the cluster must be r
 * execute it on HDFS: 
 `$ bin/hadoop jar wc.jar WordCount input output`
 
-Note: You can also execute some precompiled jar files
+Note: You can also execute some precompiled jar files, try:
 
-`$ bin/hadoop jar share/hadoop/mapreduce/hadoop-mapreduce-examples-3.2.1.jar aggregatewordcount input-dir output-dir`
+`$ bin/hdfs dfs -mkdir input
+
+ $ bin/hdfs dfs -put etc/hadoop/*.xml input
+
+$ bin/hadoop jar share/hadoop/mapreduce/hadoop-mapreduce-examples-3.2.1.jar grep input output 'dfs[a-z.]+'`
+
+or 
+
+`$ bin/hadoop jar share/hadoop/mapreduce/hadoop-mapreduce-examples-3.2.1.jar wordcount input output`
+
+* visualise the output
+
+`$ bin/hdfs dfs -cat output/part-r-00000`
 
 ## If Datanode does not start
 
