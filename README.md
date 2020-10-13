@@ -117,9 +117,14 @@ If you want to compile and run your own java program (note the cluster must be r
 
 # Python: try it 
 You can also run MapReduce job on Hadoop written in Python.
+
 The tutorial below is a good starting point to try this:
 
 https://www.michael-noll.com/tutorials/writing-an-hadoop-mapreduce-program-in-python/
+
+Alternative, you can intall the MRJob Library using pip (or pip3 depending on your Python version):
+
+<https://pypi.org/project/mrjob/>
 
 <!--Install MRJob library
 https://pypi.org/project/mrjob/#description
