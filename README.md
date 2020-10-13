@@ -120,12 +120,6 @@ Check step 9 of the tutorial available here <https://docs.deistercloud.com/conte
 `$ sbin/start-all.sh`
 
 # Python
-You can also run MapReduce job on Hadoop written in Python.
-
-The tutorial below is a good starting point to try this:
-
-https://www.michael-noll.com/tutorials/writing-an-hadoop-mapreduce-program-in-python/
-
 Hadoop Streaming allows you to create and run Map/Reduce jobs with any executable or script as the mapper and/or the reducer.
 For Python, the MRJob Library wraps Hadoop streaming and allows you to run python mapreduce jobs.
 
@@ -134,6 +128,13 @@ See <https://pypi.org/project/mrjob/> for more info.
 Install MRJob using pip (or pip3 depending on your Python version) as in the tutorial below:
 
 <https://github.com/Yelp/mrjob/blob/master/docs/guides/quickstart.rst>
+
+## Note: Python MapReduce via Hadoop Streaming
+
+The tutorial below is a good starting point to try this:
+
+https://www.michael-noll.com/tutorials/writing-an-hadoop-mapreduce-program-in-python/
+
 
 <!--Install MRJob library
 https://pypi.org/project/mrjob/#description
