@@ -103,6 +103,10 @@ If you want to compile and run your own java program (note the cluster must be r
 * execute it on HDFS: 
 `$ bin/hadoop jar wc.jar WordCount input output`
 
+## Note on file location
+Make sure files you create need to be copied into HDFS root in order to be found.
+
+Check step 9 of the tutorial available here <https://docs.deistercloud.com/content/Technology.50/Hadoop/Hadoop%20single.10.xml?embedded=true#c5ceb5c977c8c4cf1d80d5601f43f406>
 
 # If Datanode does not start
 
