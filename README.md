@@ -39,11 +39,11 @@ Follow the instructions here for execution of a jar:
 
 Note: You can also execute some precompiled jar files, try:
 
-`$ bin/hdfs dfs -mkdir input
+`$ bin/hdfs dfs -mkdir input`
 
- $ bin/hdfs dfs -put etc/hadoop/*.xml input
+`$ bin/hdfs dfs -put etc/hadoop/*.xml input`
 
-$ bin/hadoop jar share/hadoop/mapreduce/hadoop-mapreduce-examples-3.2.1.jar grep input output 'dfs[a-z.]+'`
+`$ bin/hadoop jar share/hadoop/mapreduce/hadoop-mapreduce-examples-3.2.1.jar grep input output 'dfs[a-z.]+'`
 
 or 
 
