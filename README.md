@@ -119,7 +119,7 @@ Check step 9 of the tutorial available here <https://docs.deistercloud.com/conte
 * start the cluster again: 
 `$ sbin/start-all.sh`
 
-# Python: try it 
+# Python
 You can also run MapReduce job on Hadoop written in Python.
 
 The tutorial below is a good starting point to try this:
@@ -129,6 +129,10 @@ https://www.michael-noll.com/tutorials/writing-an-hadoop-mapreduce-program-in-py
 Alternative, you can install the MRJob Library using pip (or pip3 depending on your Python version):
 
 <https://pypi.org/project/mrjob/>
+
+And follow the tutorial at 
+
+<https://github.com/Yelp/mrjob/blob/master/docs/guides/quickstart.rst>
 
 <!--Install MRJob library
 https://pypi.org/project/mrjob/#description
