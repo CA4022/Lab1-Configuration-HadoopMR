@@ -37,11 +37,12 @@ Follow the instructions here for execution of a jar:
 
 <https://hadoop.apache.org/docs/current/hadoop-project-dist/hadoop-common/SingleCluster.html#Standalone_Operation>
 
-Note: You can also execute some precompiled jar files, try:
+In particular, set your HDFS input and copy input files in there:
 
 `$ bin/hdfs dfs -mkdir input`
 
 `$ bin/hdfs dfs -put etc/hadoop/*.xml input`
+
 
 `$ bin/hadoop jar share/hadoop/mapreduce/hadoop-mapreduce-examples-3.2.1.jar grep input output 'dfs[a-z.]+'`
 
@@ -52,6 +53,11 @@ or
 * visualise the output
 
 `$ bin/hdfs dfs -cat output/part-r-00000`
+
+## Note: available example
+The use of wordcount and grep is an example, you can see available example by running
+
+`$ bin/hadoop jar share/hadoop/mapreduce/hadoop-mapreduce-examples-3.2.1.jar xxx input output`
 
 ## NOTE on output folder
 
