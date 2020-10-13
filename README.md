@@ -47,6 +47,20 @@ https://docs.deistercloud.com/content/Technology.50/Hadoop/Hadoop%20single.10.xm
 
 `$ bin/hadoop jar share/hadoop/mapreduce/hadoop-mapreduce-examples-3.2.1.jar grep input output 'dfs[a-z.]+'`
 
+If you want to compile your own java program: 
+when the cluster is running:
+
+`$export HADOOP_CLASSPATH=$JAVA_HOME/lib/tools.jar`
+
+After creating and saving your WordCount.java program, compile it and create a jar file
+
+`$ bin/hadoop com.sun.tools.javac.Main WordCount.java`
+`$ jar cf wc.jar WordCount*.class`
+
+Execute it on HDFS
+
+`$ bin/hadoop jar wc.jar WordCount `
+
 ## If Datanode does not start
 
 Clean tmp directory
