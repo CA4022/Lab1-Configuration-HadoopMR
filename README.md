@@ -36,51 +36,61 @@ If hadoop installation via brew does not work, get the latest stable release fro
 `hadoop classpath` will give you the requisite libraries if you are compiling
 from the command line.
 
+Follow the instructions here to make and run the jar
 
-<!--Follow the instructions here to make and run the jar
 <http://hadoop.apache.org/docs/current/hadoop-mapreduce-client/hadoop-mapreduce-client-core/MapReduceTutorial.html>
-Generate a sample input file as in 
+
+<!--Generate a sample input file as in 
 https://docs.deistercloud.com/content/Technology.50/Hadoop/Hadoop%20single.10.xml?embedded=true#c5ceb5c977c8c4cf1d80d5601f43f406
-`$ bin/hadoop jar share/hadoop/mapreduce/hadoop-mapreduce-examples-3.2.1.jar grep words.txt output 'mark'`-->
+`$ bin/hadoop jar share/hadoop/mapreduce/hadoop-mapreduce-examples-3.2.1.jar grep words.txt output 'mark'`
+`$ bin/hadoop jar share/hadoop/mapreduce/hadoop-mapreduce-examples-3.2.1.jar grep input output 'dfs[a-z.]+'` -->
 
 <!-- my hadoop is at /usr/local/Cellar/hadoop-3.2.1/ -->
 
-`$ bin/hadoop jar share/hadoop/mapreduce/hadoop-mapreduce-examples-3.2.1.jar grep input output 'dfs[a-z.]+'`
 
-If you want to compile your own java program: 
-when the cluster is running:
+If you want to compile and run your own java program (note the cluster must be running):
+
+* make sure you set your HADOOP_CLASSPATH: 
 
 `$export HADOOP_CLASSPATH=$JAVA_HOME/lib/tools.jar`
 
-After creating and saving your WordCount.java program, compile it and create a jar file
+* after creating and saving your WordCount.java program, compile it and create a jar file
 
 `$ bin/hadoop com.sun.tools.javac.Main WordCount.java`
 `$ jar cf wc.jar WordCount*.class`
 
-Execute it on HDFS
+* execute it on HDFS: 
+`$ bin/hadoop jar wc.jar WordCount input output`
 
-`$ bin/hadoop jar wc.jar WordCount `
+Note: You can also execute some precompiled jar files
+
+`$ bin/hadoop jar share/hadoop/mapreduce/hadoop-mapreduce-examples-3.2.1.jar aggregatewordcount input-dir output-dir`
 
 ## If Datanode does not start
 
-Clean tmp directory
-
+* clean tmp directory: 
 `$ rm -Rf /tmp/hadoop-yourusername/*`
 
-Format namenode and then start dfs again.
+* format namenode:
+`$ bin/hdfs namenode -format`
 
+* start the cluster again: 
+`$ sbin/start-all.sh`
 
-# Python
+# Python: try it 
+You can also run MapReduce job on Hadoop written in Python.
+The tutorial below is a good starting point to try this:
 
-Install MRJob library
+https://www.michael-noll.com/tutorials/writing-an-hadoop-mapreduce-program-in-python/
 
+<!--Install MRJob library
 https://pypi.org/project/mrjob/#description
-
-<!-- Run the mrjob.py program
+Run the mrjob.py program
 <https://pythonhosted.org/mrjob/guides/quickstart.html>
 Alter the example program to produce a wordcount -->
 
-## Bonus items: come back to this after the Lecture on Amazon EC2 and Elastic MapReduce (EMR)
+## Bonus: run on EMR
+We will come back to this after the Lecture on Amazon EC2 and Elastic MapReduce (EMR)
 
-* Run this on Elastic Mapreduce (You'll need API keys from your AWS Console)
+To run this on Elastic Mapreduce you'll need API keys from your AWS Console.
 
