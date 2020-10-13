@@ -12,11 +12,16 @@ In order to avoid overload we are not going to create a VM to run Hadoop, but we
 # Set up a single node Hadoop Cluster
 
 The official Apache manual for installing a single node Hadoop Cluster is here:
+
 <https://hadoop.apache.org/docs/current/hadoop-project-dist/hadoop-common/SingleCluster.html>
 
 For MAC users, I found this step-by-step guide works with very minor issues:
+
 <https://towardsdatascience.com/installing-hadoop-on-a-mac-ec01c67b003c>
 
+## Note on configuration files
+
+You mght need to change the port used for localhost based on your system.
 
 <!--Install homebrew <https://brew.sh/>
 Check Java version
