@@ -126,7 +126,7 @@ The tutorial below is a good starting point to try this:
 
 https://www.michael-noll.com/tutorials/writing-an-hadoop-mapreduce-program-in-python/
 
-Alternative, you can intall the MRJob Library using pip (or pip3 depending on your Python version):
+Alternative, you can install the MRJob Library using pip (or pip3 depending on your Python version):
 
 <https://pypi.org/project/mrjob/>
 
