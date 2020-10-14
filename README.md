@@ -37,8 +37,9 @@ For Windows users, you would need to
     * For more details on Vagrantfile commands see https://www.vagrantup.com/docs/vagrantfile/
     * During the course of the labs for this module we can add commands to the vagrant file, building upon the blank intial VagrantFile to create one which provisions the VM with everything you need already installed.
 9. `vagrant halt` shuts down the VM
-10. `vagrant destroy` deletes the VM
+10. `vagrant destroy` deletes the VM 
 
+* NOTE: careful with `vagrant destroy`! If you have installed software on that VM, everything will be deleted, unless... you have updated your vagrant file and saved a copy of it. You will still loose the data)
 
 Windows tutorial for above instructions here:
 
