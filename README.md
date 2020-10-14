@@ -19,6 +19,31 @@ For MAC users, I found this step-by-step guide works with very minor issues:
 
 <https://towardsdatascience.com/installing-hadoop-on-a-mac-ec01c67b003c>
 
+For Windows users, you would need to 
+
+1. Install [VirtualBox](https://www.virtualbox.org/)
+2. Install [Vagrant](https://www.vagrantup.com/)
+3. CD into the directory where you want to put your VagrantFile
+    * Note for DCU lab machine users - When creating a VM, you should create a folder in d:\virtual (or d:\temp) and store the VM there (or on a personal USB hard drive)
+4. `vagrant --version`will check your vagrant version 
+5. `vagrant init ubuntu/trusty64` will create a vagrant box (and your vagrant file) and set up your virtual machine
+    * Note you can only have one VagrantFile in any given directory
+6. `vagrant up` will start the process of downloading and configuring the VM
+7. Use `vagrant ssh` to ssh into the running machine
+    * Alternatively, you can use putty to ssh into `localhost` port `2222` (username/password is `vagrant`)
+8. You can then open the `VagrantFile` in a text editor and edit as necessary (but we don't have to do that)
+    * You might wish to change the number of VCPUs, Memory Allocation
+    * You might wish to add or remove shared directories
+    * For more details on Vagrantfile commands see https://www.vagrantup.com/docs/vagrantfile/
+    * During the course of the labs for this module we can add commands to the vagrant file, building upon the blank intial VagrantFile to create one which provisions the VM with everything you need already installed.
+9. `vagrant halt` shuts down the VM
+10. `vagrant destroy` deletes the VM
+
+
+Windows tutorial for above instructions here:
+
+<https://sloopstash.com/blog/how-to-build-vm-on-windows-10-using-virtualbox-vagrant-git-bash.html>
+
 ## Note on configuration files
 
 You mght need to change the port used for localhost based on your system.
@@ -29,7 +54,7 @@ $ java -version
 If you do not have Java8, install it
 $ brew cask install homebrew/cask-versions/adoptopenjdk8-->
 
-## Note on hadoop install 
+## Note on hadoop install vith homebrew (MAC OS users ONLY)
 If hadoop installation via brew does not work, get the latest stable release from:
 
 <https://mirrors.whoishostingthis.com/apache/hadoop/common/>
