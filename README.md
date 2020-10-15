@@ -142,7 +142,7 @@ If you want to compile and run your own java program (note the cluster must be r
 
 `$ dirname $(dirname $(readlink -f $(which javac)))`    (on Linux/Unix)
 
-`$ $(dirname $(readlink $(which javac)))/java_home`    (on Linux/Unix)
+`$ $(dirname $(readlink $(which javac)))/java_home`    (on MAC OS)
 
 
 
