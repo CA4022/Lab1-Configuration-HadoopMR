@@ -144,7 +144,7 @@ If you want to compile and run your own java program (note the cluster must be r
 
 `$ $(dirname $(readlink $(which javac)))/java_home`    (on MAC OS)
 
-and set it by using `$export JAVA_HOME=<path>`
+and set it by using `$ export JAVA_HOME=<path>`
 
 * make sure you set your HADOOP_CLASSPATH: 
 
