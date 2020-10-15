@@ -188,7 +188,7 @@ Install MRJob using pip (or pip3 depending on your Python version) as in the tut
 
 ## Note: Python MapReduce via Hadoop Streaming
 
-The tutorial below is a good starting point to try this:
+If you want to try Hadoop Streaming to run Python (but not only) jobs, the tutorial below is a good starting point:
 
 https://www.michael-noll.com/tutorials/writing-an-hadoop-mapreduce-program-in-python/
 
