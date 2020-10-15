@@ -9,17 +9,8 @@ Vagrantfile above creates an blank ubuntu trusty 64 virtual machine and installs
 In order to avoid overload we are not going to create a VM to run Hadoop, but we will run a single node cluster on our own machine (Mac or Windows) or on the Unix Lab machine accessible remotely.
 
 
-# Set up a single node Hadoop Cluster
-
-The official Apache manual for installing a single node Hadoop Cluster is here:
-
-<https://hadoop.apache.org/docs/current/hadoop-project-dist/hadoop-common/SingleCluster.html>
-
-For MAC users, I found this step-by-step guide works with very minor issues:
-
-<https://towardsdatascience.com/installing-hadoop-on-a-mac-ec01c67b003c>
-
-For Windows users, you would need to 
+# Windows users
+Windows users would need to install a Virtual Machine running Linux, instructions as follows:
 
 1. Install [VirtualBox](https://www.virtualbox.org/)
 2. Install [Vagrant](https://www.vagrantup.com/)
@@ -47,13 +38,37 @@ Windows tutorial for above instructions here:
 
 ## Note on configuration files
 
-You mght need to change the port used for localhost based on your system.
+You might need to change the port used for localhost based on your system.
 
 <!--Install homebrew <https://brew.sh/>
 Check Java version
 $ java -version
 If you do not have Java8, install it
 $ brew cask install homebrew/cask-versions/adoptopenjdk8-->
+
+
+# Set up a single node Hadoop Cluster (Unix/Linux)
+
+Now you are either working on your Linux VM, or on your Linux/Unix/OS X machine
+The official Apache manual for installing a single node Hadoop Cluster is here:
+
+<https://hadoop.apache.org/docs/current/hadoop-project-dist/hadoop-common/SingleCluster.html>
+
+# Downloading and installing Hadoop from Linux/Unix commandline
+
+1. Download binary from the internet (using a mirror site)
+
+`$ wget https://mirrors.whoishostingthis.com/apache/hadoop/common/stable/hadoop-3.2.1.tar.gz`
+
+2. Unzip hadoop binary (in current directory, use `$ -C ~/<dirname> ` to unzip in a different directory `<dirname>` under user home folder)
+
+`$ tar -xvzf hadoop-3.3.0.tar.gz `
+
+
+## MAC OS X only
+I found this step-by-step guide works with very minor issues:
+
+<https://towardsdatascience.com/installing-hadoop-on-a-mac-ec01c67b003c>
 
 ## Note on hadoop install vith homebrew (MAC OS users ONLY)
 If hadoop installation via brew does not work, get the latest stable release from:
