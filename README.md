@@ -36,7 +36,7 @@ Windows tutorial for above instructions here:
 
 <https://sloopstash.com/blog/how-to-build-vm-on-windows-10-using-virtualbox-vagrant-git-bash.html>
 
-## Note on configuration files
+## NOTE on configuration files
 
 You might need to change the port used for localhost based on your system.
 
@@ -70,7 +70,7 @@ I found this step-by-step guide works with very minor issues:
 
 <https://towardsdatascience.com/installing-hadoop-on-a-mac-ec01c67b003c>
 
-## Note on hadoop install vith homebrew (MAC OS users ONLY)
+## NOTE on hadoop install vith homebrew (MAC OS users ONLY)
 If hadoop installation via brew does not work, get the latest stable release from:
 
 <https://mirrors.whoishostingthis.com/apache/hadoop/common/>
@@ -107,7 +107,7 @@ or
 
 `$ bin/hdfs dfs -cat output/* `
 
-## Note: available example
+## NOTE on available example
 The use of wordcount and grep is an example, you can see available example by running
 
 `$ bin/hadoop jar share/hadoop/mapreduce/hadoop-mapreduce-examples-3.2.1.jar xxx input output`
