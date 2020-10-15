@@ -83,12 +83,15 @@ Follow the instructions here for execution of a jar:
 
 <https://hadoop.apache.org/docs/current/hadoop-project-dist/hadoop-common/SingleCluster.html#Standalone_Operation>
 
-In particular, set your HDFS input and copy input files in there:
+In particular: 
+
+* Set your HDFS input and copy input files in there:
 
 `$ bin/hdfs dfs -mkdir input`
 
 `$ bin/hdfs dfs -put etc/hadoop/*.xml input`
 
+* Run a jar (compiled java file) from the mapreduce examples available in your hadoop folder:
 
 `$ bin/hadoop jar share/hadoop/mapreduce/hadoop-mapreduce-examples-3.2.1.jar grep input output 'dfs[a-z.]+'`
 
@@ -96,9 +99,13 @@ or
 
 `$ bin/hadoop jar share/hadoop/mapreduce/hadoop-mapreduce-examples-3.2.1.jar wordcount input output`
 
-* visualise the output
+* Visualise the output
 
 `$ bin/hdfs dfs -cat output/part-r-00000`
+
+or
+
+`$ bin/hdfs dfs -cat output/* `
 
 ## Note: available example
 The use of wordcount and grep is an example, you can see available example by running
