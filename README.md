@@ -136,19 +136,28 @@ Follow the instructions here to make and run the jar
 
 If you want to compile and run your own java program (note the cluster must be running):
 
-* make sure you set your JAVA_HOME to the right path (you find it by running 
-`$ /usr/libexec/java_home`)
+* make sure you set your JAVA_HOME to the right path. You can find it by running 
+
+<!--`$ /usr/libexec/java_home` on my MAC -->
+
+`$ dirname $(dirname $(readlink -f $(which javac)))`    (on Linux/Unix)
+
+`$ $(dirname $(readlink $(which javac)))/java_home`    (on Linux/Unix)
+
+
 
 * make sure you set your HADOOP_CLASSPATH: 
 
-`$export HADOOP_CLASSPATH=$JAVA_HOME/lib/tools.jar`
+`$ export HADOOP_CLASSPATH=$JAVA_HOME/lib/tools.jar`
 
 * after creating and saving your WordCount.java program, compile it and create a jar file
 
 `$ bin/hadoop com.sun.tools.javac.Main WordCount.java`
+
 `$ jar cf wc.jar WordCount*.class`
 
 * execute it on HDFS: 
+
 `$ bin/hadoop jar wc.jar WordCount input output`
 
 ## Note on file location
