@@ -54,7 +54,7 @@ The official Apache manual for installing a single node Hadoop Cluster is here:
 
 <https://hadoop.apache.org/docs/current/hadoop-project-dist/hadoop-common/SingleCluster.html>
 
-# Downloading and installing Hadoop from Linux/Unix commandline
+# Downloading and installing Hadoop from command line
 
 1. Download binary from the internet (using a mirror site)
 
