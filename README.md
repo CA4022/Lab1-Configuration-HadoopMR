@@ -1,5 +1,5 @@
 # Lab 1 - Hadoop and Map Reduce
-This is the first lab, installing hadoop, writing and running a basic hadoop program.
+This lab spans across the first two weeks and it includes instructions on installing hadoop, running a single node hadoop cluster and writing/running a basic hadoop program (in Java and Python)
 
 We will start from the basic wordcount program as illustreated in the lecture slides.
 
