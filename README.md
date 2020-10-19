@@ -1,4 +1,4 @@
-# FirstLab
+# Lab 1 - Hadoop and Map Reduce
 This is the first lab, installing hadoop, writing and running a basic hadoop program.
 
 We will start from the basic wordcount program as illustreated in the lecture slides.
