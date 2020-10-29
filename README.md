@@ -8,6 +8,7 @@ We will start from the basic wordcount program as illustreated in the lecture sl
 Vagrantfile above creates an blank ubuntu trusty 64 virtual machine and installs mrjob (python mapreduce library).
 In order to avoid overload we are not going to create a VM to run Hadoop, but we will run a single node cluster on our own machine (Mac or Windows) or on the Unix Lab machine accessible remotely.
 
+<!--Note on setting your path: https://stackabuse.com/how-to-permanently-set-path-in-linux/-->
 
 # Windows users
 Windows users would need to install a Virtual Machine running Linux, instructions as follows:
