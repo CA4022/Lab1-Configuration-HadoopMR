@@ -171,6 +171,9 @@ Check step 9 of the tutorial available here <https://docs.deistercloud.com/conte
 * clean tmp directory: 
 `$ rm -Rf /tmp/hadoop-yourusername/*`
 
+* start the cluster again: 
+  - `$ sbin/start-dfs.sh`
+  - `$ sbin/start-yarn.sh`
 
 If this does not work:
 
