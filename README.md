@@ -171,11 +171,19 @@ Check step 9 of the tutorial available here <https://docs.deistercloud.com/conte
 * clean tmp directory: 
 `$ rm -Rf /tmp/hadoop-yourusername/*`
 
-* format namenode:
+
+If this does not work:
+
+* stop the cluster: 
+`$ sbin/stop-all.sh`
+
+* format namenode (note this will remove all directories and files you have created in your hdfs!):
 `$ bin/hdfs namenode -format`
 
 * start the cluster again: 
-`$ sbin/start-all.sh`
+  - `$ sbin/start-dfs.sh`
+  - `$ sbin/start-yarn.sh`
+
 
 # Python
 Hadoop Streaming allows you to create and run Map/Reduce jobs with any executable or script as the mapper and/or the reducer.
