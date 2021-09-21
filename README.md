@@ -223,8 +223,11 @@ Run the mrjob.py program
 <https://pythonhosted.org/mrjob/guides/quickstart.html>
 Alter the example program to produce a wordcount -->
 
-# Bonus: run on EMR
-We will come back to this after the Lecture on Amazon EC2 and Elastic MapReduce (EMR)
+# Bonus: run on a Cloud Platrofm (AWS EMR or Google DataProc)
 
-To run this on Elastic Mapreduce you'll need API keys from your AWS Console.
+We will come back to this after the Lecture on Amazon EC2 and Elastic MapReduce (EMR).
+Labsheet available [here](https://github.com/CA4022/Big-Data-Cloud)
+
+**Note for AWS only**: to run this on Elastic Mapreduce you'll need API keys from your AWS Console.
+
 
