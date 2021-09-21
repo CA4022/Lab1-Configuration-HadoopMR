@@ -67,7 +67,7 @@ The official Apache manual for installing a single node Hadoop Cluster is here:
 
 1. Download binary from the internet (using a mirror site)
 
-`$ wget https://mirrors.whoishostingthis.com/apache/hadoop/common/stable/hadoop-3.3.0.tar.gz`
+`$ wget https://dlcdn.apache.org/hadoop/common/hadoop-3.3.0/hadoop-3.3.0.tar.gz`
 
 2. Unzip hadoop binary (in current directory, use `$ -C ~/<dirname> ` to unzip in a different directory `<dirname>` under user home folder)
 
