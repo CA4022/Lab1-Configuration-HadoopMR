@@ -45,7 +45,7 @@ Windows tutorial for above instructions here:
 1. Install Ubuntu using [Windows Subsystem for Linux (WSL)](https://docs.microsoft.com/en-us/windows/wsl/install-win10)
 
 
-## NOTE on configuration of ports and Java Version
+## NOTE on configuration of ports
 
 You might need to change the port used for localhost based on your system.
 
