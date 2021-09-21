@@ -42,10 +42,10 @@ Windows tutorial for above instructions here:
 
 ## 2. Use Windows Subsystem for Linux (WSL) on Win10
 
-1. Install [Windows Subsystem for Linux (WSL)](https://docs.microsoft.com/en-us/windows/wsl/install-win10)
-2. Instsall Ubuntu to work within your WSL and Install Java JDK as instructed [here](https://kontext.tech/column/hadoop/445/install-hadoop-330-on-windows-10-using-wsl)
+1. Install Ubuntu using [Windows Subsystem for Linux (WSL)](https://docs.microsoft.com/en-us/windows/wsl/install-win10)
 
-## NOTE on configuration files
+
+## NOTE on configuration of ports and Java Version
 
 You might need to change the port used for localhost based on your system.
 
@@ -56,12 +56,6 @@ If you do not have Java8, install it
 $ brew cask install homebrew/cask-versions/adoptopenjdk8-->
 
 
-# Set up a single node Hadoop Cluster (Unix/Linux)
-
-Now you are either working on your Linux VM, or on your Linux/Unix/OS X machine
-The official Apache manual for installing a single node Hadoop Cluster is here:
-
-<https://hadoop.apache.org/docs/current/hadoop-project-dist/hadoop-common/SingleCluster.html>
 
 # Downloading and installing Hadoop from command line
 
@@ -75,7 +69,7 @@ The official Apache manual for installing a single node Hadoop Cluster is here:
 
 
 ## MAC OS X only
-I found this step-by-step guide works with very minor issues:
+I found this step-by-step guide works with very minor issues (includes running a single node cluster):
 
 <https://towardsdatascience.com/installing-hadoop-on-a-mac-ec01c67b003c>
 
@@ -85,6 +79,16 @@ If hadoop installation via brew does not work, get the latest stable release fro
 <https://mirrors.whoishostingthis.com/apache/hadoop/common/>
 
 <!-- have not added the JAVA_HOME setup on hadoop-env.sh as it gave error-->
+
+
+# Set up and run a single node Hadoop Cluster (Standalone mode)
+
+Now you are either working on your Linux VM, or on your Linux/Unix/OS X machine
+The official Apache manual for installing a single node Hadoop Cluster is here:
+
+<https://hadoop.apache.org/docs/current/hadoop-project-dist/hadoop-common/SingleCluster.html>
+
+Follow instructions from **Prepare to start the Hadoop Cluster**
 
 # Java: running an example jar
 
