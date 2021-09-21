@@ -3,7 +3,7 @@ This lab spans across the first two weeks and it includes instructions on instal
 
 We will start from the basic wordcount program as illustreated in the lecture slides.
 
-## Note on Vagrant
+## Note on Vagrant (for VirtualBox users)
  
 Vagrantfile above creates an blank ubuntu trusty 64 virtual machine and installs mrjob (python mapreduce library).
 In order to avoid overload we are not going to create a VM to run Hadoop, but we will run a single node cluster on our own machine (Mac or Windows) or on the Unix Lab machine accessible remotely.
@@ -11,7 +11,10 @@ In order to avoid overload we are not going to create a VM to run Hadoop, but we
 <!--Note on setting your path: https://stackabuse.com/how-to-permanently-set-path-in-linux/-->
 
 # Windows users
-Windows users would need to install a Virtual Machine running Linux, instructions as follows:
+Windows users have two options:
+
+## 1. Installing a Virtual Machine (running Ubuntu)
+Instructions as follows:
 
 1. Install [VirtualBox](https://www.virtualbox.org/)
 2. Install [Vagrant](https://www.vagrantup.com/)
@@ -37,6 +40,11 @@ Windows tutorial for above instructions here:
 
 <https://sloopstash.com/blog/how-to-build-vm-on-windows-10-using-virtualbox-vagrant-git-bash.html>
 
+## 2. Use Windows Subsystem for Linux (WSL) on Win10
+
+1. Install [Windows Subsystem for Linux (WSL)](https://docs.microsoft.com/en-us/windows/wsl/install-win10)
+2. Instsall Ubuntu to work within your WSL and Install Java JDK as instructed [here](https://kontext.tech/column/hadoop/445/install-hadoop-330-on-windows-10-using-wsl)
+
 ## NOTE on configuration files
 
 You might need to change the port used for localhost based on your system.
@@ -59,7 +67,7 @@ The official Apache manual for installing a single node Hadoop Cluster is here:
 
 1. Download binary from the internet (using a mirror site)
 
-`$ wget https://mirrors.whoishostingthis.com/apache/hadoop/common/stable/hadoop-3.2.1.tar.gz`
+`$ wget https://mirrors.whoishostingthis.com/apache/hadoop/common/stable/hadoop-3.3.0.tar.gz`
 
 2. Unzip hadoop binary (in current directory, use `$ -C ~/<dirname> ` to unzip in a different directory `<dirname>` under user home folder)
 
