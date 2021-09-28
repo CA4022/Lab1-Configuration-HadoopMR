@@ -163,15 +163,16 @@ Follow the instructions here to make and run the jar
 
 If you want to compile and run your own java program (note the cluster must be running):
 
-* make sure you set your JAVA_HOME to the right `<path>`. You can find this path by running 
+* make sure you set your JAVA_HOME to the right `<path>` (see above).
+<!-- You can find this path by running 
 
-<!--`$ /usr/libexec/java_home` on my MAC -->
+----`$ /usr/libexec/java_home` on my MAC ----
 
 `$ dirname $(dirname $(readlink -f $(which javac)))`    (on Linux/Unix)
 
 `$ $(dirname $(readlink $(which javac)))/java_home`    (on MAC OS)
 
-and set it by using `$ export JAVA_HOME=<path>`
+and set it by using `$ export JAVA_HOME=<path>`-->
 
 * make sure you set your HADOOP_CLASSPATH: 
 
