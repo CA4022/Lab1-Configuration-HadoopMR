@@ -90,7 +90,6 @@ The official Apache manual for installing a single node Hadoop Cluster is here:
 
 Follow instructions from **Prepare to start the Hadoop Cluster**
 
-
 ## Note on how to check everything is in the right place
 
 * Where is my JAVA_HOME? `$ /usr/libexec/java_home`
@@ -99,6 +98,11 @@ Follow instructions from **Prepare to start the Hadoop Cluster**
    1. For this session only: `$ export JAVA_HOME=<path returned from previous command>`
    2. For hadoop: change value in configuration file `etc/hadoop/hadoop-env.sh`
 * Make sure you are in hadoop home directory`$ cd <hadoop dir> `
+
+## Start your cluster
+Remember you need to start your cluster before you can access anything on the Hadoop Distributed File System (HDFS).
+
+Follow instructions from **Execution** in the Apache [manual](<https://hadoop.apache.org/docs/current/hadoop-project-dist/hadoop-common/SingleCluster.html>)
 
 # Java: running an example jar
 
