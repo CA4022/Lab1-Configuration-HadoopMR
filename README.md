@@ -84,8 +84,7 @@ If hadoop installation via brew does not work, get the latest stable release fro
 <!-- have not added the JAVA_HOME setup on hadoop-env.sh as it gave error-->
 
 
-# Set up and run a single node Hadoop Cluster (Standalone mode)
-
+# Set up and run a single node Hadoop Cluster
 Now you are either working on your Linux VM, or on your Linux/Unix/OS X machine
 The official Apache manual for installing a single node Hadoop Cluster is here:
 
