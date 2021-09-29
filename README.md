@@ -93,7 +93,7 @@ Follow instructions from **Prepare to start the Hadoop Cluster**
 ## Note on how to check everything is in the right place
 
 * Where is my JAVA_HOME? `$ /usr/libexec/java_home`
-* How do I check what is the current setup for JAVA_HOME? `$ echo $HAVA_HOME`
+* How do I check what is the current setup for JAVA_HOME? `$ echo $JAVA_HOME`
 * How do I set my JAVA_HOME? 
    1. For this session only: `$ export JAVA_HOME=<path returned from previous command>`
    2. For hadoop: change value in configuration file `etc/hadoop/hadoop-env.sh`
