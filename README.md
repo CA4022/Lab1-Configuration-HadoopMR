@@ -69,9 +69,12 @@ $ brew cask install homebrew/cask-versions/adoptopenjdk8-->
 
 
 ## MAC OS X only
-I found this step-by-step guide works with very minor issues (includes running a single node cluster):
+I found these step-by-step guides works with very minor issues (includes running a single node cluster):
 
-<https://towardsdatascience.com/installing-hadoop-on-a-mac-ec01c67b003c>
+1. [Jan2020 guide](https://towardsdatascience.com/installing-hadoop-on-a-mac-ec01c67b003c)
+<!-- 2. <https://www.digitalcare.org/how-to-install-hadoop-on-mac/ -->
+2. [Hadoop 3.3.0](https://techblost.com/how-to-install-hadoop-on-mac-with-homebrew/)
+
 
 ## NOTE on hadoop install vith homebrew (MAC OS users ONLY)
 If hadoop installation via brew does not work, get the latest stable release from:
