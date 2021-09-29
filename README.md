@@ -105,7 +105,7 @@ Follow instructions from **Prepare to start the Hadoop Cluster**
           * MACOS X (bash shell): Modify file ~/.bash_profile 
           * MACOS X (zsh shell): Modify file ~/.zshenv (from Catalina)
 
-* How do I make changes to env variables effective?
+* How do I make changes to env variables effective? You have two options (either one or the other):
    1. run `$ source ~/.bash_profile` or `$ source ~/.zshenv`
    2. restart terminal
 
