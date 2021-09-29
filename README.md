@@ -91,7 +91,6 @@ The official Apache manual for installing a single node Hadoop Cluster is here:
 
 <https://hadoop.apache.org/docs/current/hadoop-project-dist/hadoop-common/SingleCluster.html>
 
-Follow instructions from **Prepare to start the Hadoop Cluster**
 
 ## Note on how to check everything is in the right place
 
@@ -111,11 +110,20 @@ Follow instructions from **Prepare to start the Hadoop Cluster**
 
 * How to check what env variables are set? Run `$ printenv `
 
+## Prepare to start the Hadoop Cluster
+
+* Change .xml configuration files as indicated in the [Apache Manual](https://hadoop.apache.org/docs/current/hadoop-project-dist/hadoop-common/SingleCluster.html)
+* Set passphraseless ssh
+* If you have problems connecting to localhost via ssh:
+     1. Enable ssh in Ubuntu/Linux : `$ sudo apt-get install openssh-server`
+     2. Enable Remote Login in MAC OSX from System Preferences as instructed [here](https://bluishcoder.co.nz/articles/mac-ssh.html)
+
+
 ## Start your cluster
 Remember you need to start your cluster before you can access anything on the Hadoop Distributed File System (HDFS).
-Make sure you are in hadoop home directory`$ cd <hadoop dir> `
+Make sure you are in hadoop home directory `$ cd <hadoop dir> `
 
-Follow instructions from **Execution** in the Apache [manual](<https://hadoop.apache.org/docs/current/hadoop-project-dist/hadoop-common/SingleCluster.html>)
+Follow instructions from **Execution** in the [Apache manual](<https://hadoop.apache.org/docs/current/hadoop-project-dist/hadoop-common/SingleCluster.html>)
 
 # Java: running an example jar
 
