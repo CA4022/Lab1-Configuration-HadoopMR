@@ -97,10 +97,20 @@ Follow instructions from **Prepare to start the Hadoop Cluster**
 * How do I set my JAVA_HOME? 
    1. For this session only: `$ export JAVA_HOME=<path returned from previous command>`
    2. For hadoop: change value in configuration file `etc/hadoop/hadoop-env.sh`
-* Make sure you are in hadoop home directory`$ cd <hadoop dir> `
+   3. Permanently:
+          * UNIX/LINUX: Modify file ~/.bashrc in unix
+          * MACOS X (bash shell): Modify file ~/.bash_profile 
+          * MACOS X (zsh shell): Modify file ~/.zshenv (from Catalina)
+
+* How do I make changes to env variables effective?
+   1. run `$ source ~/.bash_profile` or `$ source ~/.zshenv`
+   2. restart terminal
+   3. 
+* How to chekc what env variables are set? Run `$ printenv `
 
 ## Start your cluster
 Remember you need to start your cluster before you can access anything on the Hadoop Distributed File System (HDFS).
+Make sure you are in hadoop home directory`$ cd <hadoop dir> `
 
 Follow instructions from **Execution** in the Apache [manual](<https://hadoop.apache.org/docs/current/hadoop-project-dist/hadoop-common/SingleCluster.html>)
 
