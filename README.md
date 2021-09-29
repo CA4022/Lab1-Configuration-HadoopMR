@@ -108,8 +108,8 @@ Follow instructions from **Prepare to start the Hadoop Cluster**
 * How do I make changes to env variables effective?
    1. run `$ source ~/.bash_profile` or `$ source ~/.zshenv`
    2. restart terminal
-   3. 
-* How to chekc what env variables are set? Run `$ printenv `
+
+* How to check what env variables are set? Run `$ printenv `
 
 ## Start your cluster
 Remember you need to start your cluster before you can access anything on the Hadoop Distributed File System (HDFS).
