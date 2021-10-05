@@ -99,8 +99,11 @@ The official Apache manual for installing a single node Hadoop Cluster is here:
    1. For this session only: `$ export JAVA_HOME=<path returned from previous command>`
    2. For hadoop: change value in configuration file `etc/hadoop/hadoop-env.sh`
    3. Permanently:
+  
           * UNIX/LINUX: Modify file ~/.bashrc in unix
+  
           * MACOS X (bash shell): Modify file ~/.bash_profile 
+          
           * MACOS X (zsh shell): Modify file ~/.zshenv (from Catalina)
 
 * How do I make changes to env variables effective? You have two options (either one or the other):
