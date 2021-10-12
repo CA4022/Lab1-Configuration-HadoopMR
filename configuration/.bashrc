@@ -1,0 +1,10 @@
+export JAVA_HOME=/Library/Java/JavaVirtualMachines/adoptopenjdk-8.jdk/Contents/Home
+export HADOOP_HOME=/usr/local/Cellar/hadoop/3.3.1/libexec
+export HADOOP_COMMON_LIB_NATIVE_DIR=$HADOOP_HOME/lib/native
+export HADOOP_OPTS="-Djava.library.path=$HADOOP_HOME/lib"
+export HADOOP_CLASSPATH=${JAVA_HOME}/lib/tools.jar
+export HIVE_HOME=/usr/local/Cellar/hive/3.1.2_3/libexec
+export PIG_VERSION=0.17.0_1
+export PIG_HOME=/usr/local/Cellar/pig/0.17.0_1/libexec
+export PATH=$PATH:$HADOOP_HOME:$JAVA_HOME/bin:$HIVE_HOME/bin:$PIG_HOME/bin
+export PDSH_RCMD_TYPE=ssh
