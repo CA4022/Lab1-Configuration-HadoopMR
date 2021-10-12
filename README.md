@@ -93,6 +93,9 @@ The official Apache manual for installing a single node Hadoop Cluster is here:
 
 ## Note on how to check everything is in the right place
 
+* What JAVA version? 
+    1. You can check what java version is supported in your hadoop installation [here](https://cwiki.apache.org/confluence/display/HADOOP/Hadoop+Java+Versions)
+    1. You can update your default java version in ubuntu following instructions [here](https://attacomsian.com/blog/change-default-java-version-ubuntu)
 * Where is my JAVA_HOME? `$ /usr/libexec/java_home`
 * How do I check what is the current setup for JAVA_HOME? `$ echo $JAVA_HOME`
 * How do I set my JAVA_HOME? 
