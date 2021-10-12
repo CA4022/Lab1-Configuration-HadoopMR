@@ -111,6 +111,13 @@ The official Apache manual for installing a single node Hadoop Cluster is here:
    2. restart terminal
 
 * How to check what env variables are set? Run `$ printenv `
+* Other env variables to add to your configuration file:
+
+```
+export HADOOP_COMMON_LIB_NATIVE_DIR=$HADOOP_HOME/lib/native
+export HADOOP_OPTS="-Djava.library.path=$HADOOP_HOME/lib"
+export HADOOP_CLASSPATH=${JAVA_HOME}/lib/tools.jar
+```
 
 ## Prepare to start the Hadoop Cluster
 
