@@ -1,7 +1,7 @@
-# Lab 1 - Hadoop and Map Reduce
-This lab spans across the first two weeks and it includes instructions on installing hadoop, running a single node hadoop cluster and writing/running a basic hadoop program (in Java and Python)
+This lab spans across the first two weeks and it includes instructions on installing and configuring hadoop (Part 1), as well as running a single node hadoop cluster and writing/running a basic hadoop program; we will start from the basic wordcount program as illustreated in the lecture slides (Part 2).
 
-We will start from the basic wordcount program as illustreated in the lecture slides.
+
+# Lab 1 - Part 1: Configuration 
 
 ## Note on Vagrant (for VirtualBox users)
  
@@ -84,7 +84,8 @@ If hadoop installation via brew does not work, get the latest stable release fro
 <!-- have not added the JAVA_HOME setup on hadoop-env.sh as it gave error-->
 
 
-# Set up and run a single node Hadoop Cluster
+# Lab 1 - Part 2: Set up and run a single node Hadoop Cluster
+
 Now you are either working on your Linux VM, or on your Linux/Unix/OS X machine
 The official Apache manual for installing a single node Hadoop Cluster is here:
 
