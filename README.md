@@ -3,10 +3,6 @@ This lab spans across the first two weeks and it includes instructions on instal
 
 # Lab 1 - Part 1: Configuration 
 
-## Note on Vagrant (for VirtualBox users)
- 
-Vagrantfile above creates an blank ubuntu trusty 64 virtual machine and installs mrjob (python mapreduce library).
-In order to avoid overload we are not going to create a VM to run Hadoop, but we will run a single node cluster on our own machine (Mac or Windows) or on the Unix Lab machine accessible remotely.
 
 <!--Note on setting your path: https://stackabuse.com/how-to-permanently-set-path-in-linux/-->
 
@@ -55,6 +51,10 @@ $ java -version
 If you do not have Java8, install it
 $ brew cask install homebrew/cask-versions/adoptopenjdk8-->
 
+## Note on Vagrant (for VirtualBox users)
+ 
+Vagrantfile available in this repo creates an blank ubuntu trusty 64 virtual machine and installs mrjob (python mapreduce library).
+In order to avoid overload we are not going to create a VM to run Hadoop, but we will run a single node cluster on our own machine (Mac or Windows) or on the Unix Lab machine accessible remotely.
 
 
 # Downloading and installing Hadoop from command line
