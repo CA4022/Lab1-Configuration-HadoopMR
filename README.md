@@ -36,12 +36,17 @@ Windows tutorial for above instructions here:
 
 <https://sloopstash.com/blog/how-to-build-vm-on-windows-10-using-virtualbox-vagrant-git-bash.html>
 
+### Note on Vagrant (for VirtualBox users)
+ 
+Vagrantfile available in this repo creates an blank ubuntu trusty 64 virtual machine and installs mrjob (python mapreduce library).
+In order to avoid overload we are not going to create a VM to run Hadoop, but we will run a single node cluster on our own machine (Mac or Windows) or on the Unix Lab machine accessible remotely.
+
 ## 2. Use Windows Subsystem for Linux (WSL) on Win10
 
 1. Install Ubuntu using [Windows Subsystem for Linux (WSL)](https://docs.microsoft.com/en-us/windows/wsl/install-win10)
 
 
-## NOTE on configuration of ports
+### NOTE on configuration of ports
 
 You might need to change the port used for localhost based on your system.
 
@@ -50,11 +55,6 @@ Check Java version
 $ java -version
 If you do not have Java8, install it
 $ brew cask install homebrew/cask-versions/adoptopenjdk8-->
-
-## Note on Vagrant (for VirtualBox users)
- 
-Vagrantfile available in this repo creates an blank ubuntu trusty 64 virtual machine and installs mrjob (python mapreduce library).
-In order to avoid overload we are not going to create a VM to run Hadoop, but we will run a single node cluster on our own machine (Mac or Windows) or on the Unix Lab machine accessible remotely.
 
 
 # Downloading and installing Hadoop from command line
