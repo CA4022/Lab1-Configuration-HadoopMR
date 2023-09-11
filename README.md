@@ -57,7 +57,7 @@ If you do not have Java8, install it
 $ brew cask install homebrew/cask-versions/adoptopenjdk8-->
 
 
-# Downloading and installing Hadoop from command line
+# Downloading and installing Hadoop from command line (on Ubuntu/Linux)
 
 1. Download binary from the internet (using a mirror site)
 
