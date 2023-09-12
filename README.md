@@ -61,11 +61,11 @@ $ brew cask install homebrew/cask-versions/adoptopenjdk8-->
 
 1. Download binary from the internet (using a mirror site)
 
-`$ wget https://dlcdn.apache.org/hadoop/common/hadoop-3.3.0/hadoop-3.3.0.tar.gz`
+`$ wget https://dlcdn.apache.org/hadoop/common/hadoop-3.3.6/hadoop-3.3.6.tar.gz`
 
 2. Unzip hadoop binary (in current directory, use `$ -C ~/<dirname> ` to unzip in a different directory `<dirname>` under user home folder)
 
-`$ tar -xvzf hadoop-3.3.0.tar.gz `
+`$ tar -xvzf hadoop-3.3.6.tar.gz `
 
 
 ## MAC OS X only
