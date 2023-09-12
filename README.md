@@ -78,8 +78,10 @@ I found these step-by-step guides works with very minor issues (includes running
 
 
 ## NOTES on hadoop install vith homebrew (MAC OS users ONLY)
-1. homebrew automatically installs the latest stable release available
-1. If hadoop installation via brew does not work, get the latest stable release from:
+
+1. Homebrew automatically installs the latest stable release available
+
+2. If hadoop installation via brew does not work, get the latest stable release from:
 
 <https://mirrors.whoishostingthis.com/apache/hadoop/common/>
 
