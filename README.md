@@ -73,7 +73,8 @@ I found these step-by-step guides works with very minor issues (includes running
 
 1. [Jan2020 guide](https://towardsdatascience.com/installing-hadoop-on-a-mac-ec01c67b003c)
 <!-- 2. <https://www.digitalcare.org/how-to-install-hadoop-on-mac/ -->
-2. [Hadoop 3.3.0](https://techblost.com/how-to-install-hadoop-on-mac-with-homebrew/)
+2. [Hadoop on MAC with Homebrew](https://techblost.com/how-to-install-hadoop-on-mac-with-homebrew/)
+3. [Hadoop on MAC M1 and M2 without Homebrew](https://pub.towardsai.net/how-to-install-hadoop-on-macbook-m1-or-m2-without-homebrew-or-virtual-machine-ac7c3c5a6ac9)
 
 
 ## NOTE on hadoop install vith homebrew (MAC OS users ONLY)
