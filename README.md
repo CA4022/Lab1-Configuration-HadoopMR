@@ -260,11 +260,11 @@ For Python, the [MRJob Library](https://pypi.org/project/mrjob/) wraps Hadoop st
 * Install MRJob using pip (or pip3 depending on your Python version)
    - `$ python --version` (check version of python) 
    - `$ pip3 install mrjob` (if already installed you will get a message)
-* Copy/paste the python file `mr_wordcount.py` from this repo into your hadoop home directory
+* Copy/paste the python file `mrcount.py` from this repo (Python directory) into your hadoop home directory
 * Run it on a textfile of your choice (locally or on hadoop)
-   -`$ python3 mr_wordcount.py textfile.txt` (make sure textfile.txt is a valid text file)
-   -`$ python3 mr_wordcount.py -r local mr_wordcount.py` (counting words in mr_wordcount.py itself, local execution)
-   -`$ python3 mr_wordcount.py -r hadoop textfile.txt` (counting words in mr_wordcount.py itself, hadoop execution)
+   -`$ python3 mrcount.py textfile.txt` (make sure textfile.txt is a valid text file)
+   -`$ python3 mrcount.py -r local mrcount.py` (counting words in mrcount.py itself, local execution)
+   -`$ python3 mrcount.py -r hadoop textfile.txt` (counting words in mrcount.py itself, hadoop execution)
   
 * See overall process and details in this [Quickstart MrJob tutorial](https://github.com/Yelp/mrjob/blob/master/docs/guides/quickstart.rst)
 
