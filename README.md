@@ -164,13 +164,19 @@ or
 
 `$ bin/hadoop jar share/hadoop/mapreduce/hadoop-mapreduce-examples-3.2.1.jar wordcount input output`
 
-* Visualise the output
+* Visualise the output from hdfs:
 
 `$ bin/hdfs dfs -cat output/part-r-00000`
 
 or
 
 `$ bin/hdfs dfs -cat output/* `
+
+* Visualise the output by moving it onto your local FS:
+
+  `$ bin/hdfs dfs -get output output` (move the output directory from HDFS to local FS)
+  
+  `$ cat output/*` (visualise the content of the directory)
 
 ## NOTE on available example
 The use of wordcount and grep is an example, you can see available example by running
