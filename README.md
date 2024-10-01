@@ -152,6 +152,7 @@ In particular:
 * Start all your daemons if you have not done so yet:
 
 `$ sbin/start-dfs.sh`
+
 `$ sbin/start-yarn.sh`
 
 * Make sure all your daemons are running (Datanode, Namenode and ResourceManager in particular):
