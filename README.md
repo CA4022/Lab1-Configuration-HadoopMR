@@ -149,6 +149,14 @@ Follow the instructions here for execution of a jar:
 <https://hadoop.apache.org/docs/current/hadoop-project-dist/hadoop-common/SingleCluster.html#Standalone_Operation>
 
 In particular: 
+* Start all your daemons if you have not done so yet:
+
+`$ sbin/start-dfs.sh`
+`$ sbin/start-yarn.sh`
+
+* Make sure all your daemons are running (Datanode, Namenode and ResourceManager in particular):
+
+`$ jps`
 
 * Set your HDFS input and copy input files in there:
 
